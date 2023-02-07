@@ -6,3 +6,5 @@ Hello, world!
 Hello, xiaohan!
 
 push permission test
+push permission test
+111

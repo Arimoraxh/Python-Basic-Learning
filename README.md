@@ -5,6 +5,5 @@ from 2022.12
 Hello, world!
 Hello, xiaohan!
 
-push permission test
-push permission test
-111
+push permission test 2月6日
+push permission test 2月7日

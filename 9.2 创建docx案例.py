@@ -12,21 +12,21 @@ from docx.shared import Cm
 
 document = Document()
 
-document.add_heading('Document Title', 0)
+document.add_heading('富途女篮比赛结果', 0)
 
-p = document.add_paragraph('A plain paragraph having some ')
-p.add_run('bold').bold = True
-p.add_run(' and some ')
-p.add_run('italic.').italic = True
+p = document.add_paragraph('2022年富途篮球队 ')
+p.add_run('女生').bold = True
+p.add_run(' 比赛 ')
+p.add_run('结果公示').italic = True
 
-document.add_heading('Heading, level 1', level=1)
-document.add_paragraph('Intense quote', style='Intense Quote')
+document.add_heading('比赛信息', level=1)
+document.add_paragraph('投篮比赛 & 3V3 & 带妹赛', style='Intense Quote')
 
 document.add_paragraph(
-    'first item in unordered list', style='List Bullet'
+    '无序列表的测试', style='List Bullet'
 )
 document.add_paragraph(
-    'first item in ordered list', style='List Number'
+    '有序列表的测试', style='List Number'
 )
 
 document.add_picture('D:/富途证券/女生篮球赛/篮球.png', width=Cm(4.5))

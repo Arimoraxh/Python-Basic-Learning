@@ -38,7 +38,7 @@ content = """
 #三个参数：第一个为文本内容，第二个 plain 设置文本格式，第三个 utf-8 设置编码
 email.attach(MIMEText(content, 'plain', 'utf-8'))
 
-#构造附件1
+#构造附件1，content-type是二进制文件
 with open('D:/富途证券/表格/SEO数据看板2.xlsx', 'rb') as file:
     attachment1 = MIMEText(file.read(), 'base64', 'utf-8')
     attachment1['content-type'] = 'application/octet-stream'
@@ -55,7 +55,7 @@ with open('D:/富途证券/表格/demo.docx', 'rb') as file:
 email.attach(attachment2)
 
 
-#创造SMTP_SSL对象并连接邮件服务器
+#创造SMTP_SSL对象并连接邮件服务器,两个参数分别为(host port)，port=465是常用的端口名
 smtp_obj = smtplib.SMTP_SSL('smtp.qq.com', 465)
 #通过用户名和授权码登录
 smtp_obj.login('moraxiaohan@qq.com', 'csygcrzkrxqybcje')

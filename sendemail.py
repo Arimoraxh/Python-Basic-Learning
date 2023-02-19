@@ -16,7 +16,7 @@ import requests
 HOST = 'smtp.qq.com'
 PORT = 465
 USER = '944820906@qq.com'
-PASS = 'rqnodasrgkiwbdhi'
+PASS = ''
 
 
 def send_email(from_user, to_users, subject='', content='', filenames=[]):

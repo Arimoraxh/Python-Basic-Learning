@@ -45,7 +45,7 @@ def main():
     shutil.make_archive('beauties', 'zip', 'D:/富途证券/表格/美女图片' )
     send_email(
         from_user='944820906@qq.com',
-        to_users='moraxiaohan@outlook.com;547058465@qq.com',
+        to_users=['moraxiaohan@outlook.com','547058465@qq.com']
         subject='福利资源分享',
         content='下载的内容在附件中，请查收！',
         filenames=['beauties.zip']

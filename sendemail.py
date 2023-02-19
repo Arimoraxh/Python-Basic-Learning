@@ -25,7 +25,7 @@ def send_email(from_user, to_users, subject='', content='', filenames=[]):
     #从from_user发送到to_users，确定邮件主题
     email = MIMEMultipart()
     email['From'] = from_user
-    email['To'] = ';'.join(to_users)
+    email['To'] = ','.join(to_users)
     email['Subject'] = subject
 
     #添加正文；MIMEText三个参数为(文本内容，文本格式，编码格式)
